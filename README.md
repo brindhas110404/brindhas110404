@@ -105,6 +105,15 @@ A local Flask application with separate browser streams for pretrained TinyYOLOv
 
 ---
 
+## 🎓 Education
+
+| Degree | University | Dates |
+|:-------|:-----------|:------|
+| **Master's in Computer Science and Applied Mathematics** | Stony Brook University, New York | Aug 2025 – May 2027 |
+| **Bachelor of Engineering in Computer Science and Engineering** | Sri Venkateswara College of Engineering, Anna University, Chennai | Aug 2021 – May 2025 |
+
+---
+
 ## 📊 GitHub Activity
 
 <div align="center">
@@ -113,6 +122,20 @@ A local Flask application with separate browser streams for pretrained TinyYOLOv
 <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=brindhas110404&theme=github_dark" width="48%" alt="Languages across public repositories" />
 
 <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=brindhas110404&theme=github_dark" width="96%" alt="GitHub contribution activity" />
+
+</div>
+
+---
+
+## 🐍 Contribution Snake
+
+<div align="center">
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/brindhas110404/brindhas110404/output/github-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/brindhas110404/brindhas110404/output/github-snake.svg" />
+  <img src="https://raw.githubusercontent.com/brindhas110404/brindhas110404/output/github-snake-dark.svg" width="96%" alt="Animated contribution graph in blue and violet" />
+</picture>
 
 </div>
 
