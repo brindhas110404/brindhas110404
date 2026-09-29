@@ -132,9 +132,9 @@ A local Flask application with separate browser streams for pretrained TinyYOLOv
 <div align="center">
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/brindhas110404/brindhas110404/output/github-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/brindhas110404/brindhas110404/output/github-snake.svg" />
-  <img src="https://raw.githubusercontent.com/brindhas110404/brindhas110404/output/github-snake-dark.svg" width="96%" alt="Animated contribution graph in blue and violet" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/brindhas110404/brindhas110404/output/github-snake-dark.svg?v=2" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/brindhas110404/brindhas110404/output/github-snake.svg?v=2" />
+  <img src="https://raw.githubusercontent.com/brindhas110404/brindhas110404/output/github-snake-dark.svg?v=2" width="96%" alt="Animated contribution graph in blue and violet" />
 </picture>
 
 </div>
