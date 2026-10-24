@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="270" viewBox="0 0 440 270" role="img" aria-label="fault-tolerant-ml: healthy. Throughput 2.83x, efficiency 94%, 200 of 200 faults recovered, detection max 3.4 seconds.">
+<style>
+.m { font-family: 'JetBrains Mono', 'SFMono-Regular', Consolas, 'Liberation Mono', monospace; }
+.led { animation: led 1.6s ease-in-out infinite; }
+@keyframes led { 0%,100% { opacity: 1; } 50% { opacity: .3; } }
+.cur { animation: cur 1s steps(1) infinite; }
+@keyframes cur { 0%,50% { opacity: 1; } 51%,100% { opacity: 0; } }
+.e0 { animation: ev 8s linear 0s infinite; }
+.e1 { animation: ev 8s linear 2s infinite; }
+.e2 { animation: ev 8s linear 4s infinite; }
+.e3 { animation: ev 8s linear 6s infinite; }
+@keyframes ev { 0% { opacity: 0; } 3%, 22% { opacity: 1; } 25%, 100% { opacity: 0; } }
+.ev { opacity: 0; }
+</style>
+<rect x="1" y="1" width="438" height="268" rx="12" fill="#0b0f19" stroke="#232b3d" stroke-width="1.5"/>
+<path d="M1,13 a12,12 0 0 1 12,-12 h414 a12,12 0 0 1 12,12 v21 h-438 z" fill="#161b26"/>
+<line x1="1" y1="34" x2="439" y2="34" stroke="#232b3d"/>
+<circle cx="20" cy="18" r="5.5" fill="#ff5f57"/><circle cx="38" cy="18" r="5.5" fill="#febc2e"/><circle cx="56" cy="18" r="5.5" fill="#28c840"/>
+<text class="m" x="220.0" y="22" text-anchor="middle" font-size="12" fill="#6e7891">fault-tolerant-ml</text>
+<circle class="led" cx="352" cy="18" r="4.5" fill="#3fb950"/>
+<text class="m" x="362" y="22" font-size="11.5" font-weight="700" fill="#3fb950">HEALTHY</text>
+
+<text class="m" x="22" y="62" font-size="11.5" fill="#6e7891"># ring-allreduce over gRPC, 3 workers, from scratch</text>
+<text class="m" x="22" y="92" font-size="13" fill="#6e7891">throughput</text><text class="m" x="168" y="92" font-size="13" font-weight="700" fill="#79c0ff">2.83x</text>
+<text class="m" x="22" y="116" font-size="13" fill="#6e7891">efficiency</text><text class="m" x="168" y="116" font-size="13" font-weight="700" fill="#79c0ff">94%</text>
+<text class="m" x="22" y="140" font-size="13" fill="#6e7891">faults</text><text class="m" x="168" y="140" font-size="13" font-weight="700" fill="#3fb950">200/200 recovered</text>
+<text class="m" x="22" y="164" font-size="13" fill="#6e7891">detection</text><text class="m" x="168" y="164" font-size="13" font-weight="700" fill="#79c0ff">max 3.4 s</text>
+<text class="m" x="22" y="188" font-size="13" fill="#6e7891">drift vs serial</text><text class="m" x="168" y="188" font-size="13" font-weight="700" fill="#79c0ff">7.77e-16</text>
+<text class="m" x="373" y="148" font-size="10" fill="#6e7891" text-anchor="middle">speedup by batch</text>
+<rect x="322" y="109.8" width="24" height="8.2" rx="3" fill="#3fb950" opacity=".85"><animate attributeName="height" from="0" to="8.2" begin="0.40s" dur=".8s" fill="freeze"/><animate attributeName="y" from="118" to="109.8" begin="0.40s" dur=".8s" fill="freeze"/></rect><text class="m" x="334" y="132" font-size="9.5" fill="#6e7891" text-anchor="middle">64</text><rect x="356" y="75.9" width="24" height="42.1" rx="3" fill="#3fb950" opacity=".85"><animate attributeName="height" from="0" to="42.1" begin="0.65s" dur=".8s" fill="freeze"/><animate attributeName="y" from="118" to="75.9" begin="0.65s" dur=".8s" fill="freeze"/></rect><text class="m" x="368" y="132" font-size="9.5" fill="#6e7891" text-anchor="middle">8,192</text><rect x="390" y="72.0" width="24" height="46.0" rx="3" fill="#3fb950" opacity=".85"><animate attributeName="height" from="0" to="46.0" begin="0.90s" dur=".8s" fill="freeze"/><animate attributeName="y" from="118" to="72.0" begin="0.90s" dur=".8s" fill="freeze"/></rect><text class="m" x="402" y="132" font-size="9.5" fill="#6e7891" text-anchor="middle">16,384</text>
+<line x1="22" y1="210" x2="418" y2="210" stroke="#232b3d"/>
+<text class="m ev e0" x="22" y="236" font-size="12" fill="#f85149">[event] W1 heartbeat missed</text><text class="m ev e1" x="22" y="236" font-size="12" fill="#e3b341">[event] detected in 3.4 s, rolling back</text><text class="m ev e2" x="22" y="236" font-size="12" fill="#3fb950">[event] W1 rejoined from checkpoint</text><text class="m ev e3" x="22" y="236" font-size="12" fill="#79c0ff">[event] step committed, weights in sync</text>
+</svg>

@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="290" viewBox="0 0 900 290" role="img" aria-label="Animated Ring-AllReduce: three workers pass gradient chunks around a ring until every worker holds the averaged gradients.">
+  <style>
+    .title { font: 700 17px 'JetBrains Mono', 'SFMono-Regular', Consolas, monospace; fill: #ffffff; }
+    .sub { font: 400 12px 'JetBrains Mono', 'SFMono-Regular', Consolas, monospace; fill: #8b949e; }
+    .stepn { font: 700 12px 'JetBrains Mono', 'SFMono-Regular', Consolas, monospace; fill: #0b0f19; }
+    .stept { font: 700 13px 'JetBrains Mono', 'SFMono-Regular', Consolas, monospace; fill: #ffffff; }
+    .stepd { font: 400 11.5px 'JetBrains Mono', 'SFMono-Regular', Consolas, monospace; fill: #6e7891; }
+    .stat { font: 700 14px 'JetBrains Mono', 'SFMono-Regular', Consolas, monospace; fill: #79c0ff; }
+    .node { font: 700 13px 'JetBrains Mono', 'SFMono-Regular', Consolas, monospace; fill: #ffffff; }
+    .center { font: 600 12px 'JetBrains Mono', 'SFMono-Regular', Consolas, monospace; fill: #6e7891; }
+    .row { opacity: 0.35; animation: lit 6s ease-in-out infinite; }
+    .r2 { animation-delay: 2s; } .r3 { animation-delay: 4s; }
+    .halo { transform-box: fill-box; transform-origin: center; animation: pulse 3s ease-in-out infinite; }
+    .h2 { animation-delay: 1s; } .h3 { animation-delay: 2s; }
+    .spin { transform-origin: 670px 165px; animation: spin 18s linear infinite; }
+    @keyframes lit { 0%, 100% { opacity: 0.35; } 6%, 30% { opacity: 1; } 36% { opacity: 0.35; } }
+    @keyframes pulse { 0%, 100% { opacity: 0.15; transform: scale(1); } 50% { opacity: 0.55; transform: scale(1.18); } }
+    @keyframes spin { to { transform: rotate(360deg); } }
+  </style>
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#79c0ff"/>
+      <stop offset="100%" stop-color="#3fb950"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="4" y="4" width="892" height="282" rx="20" fill="#0b0f19" stroke="#232b3d" stroke-width="1.5"/>
+
+  <!-- Left: explanation -->
+  <text class="title" x="40" y="52">$ man ring-allreduce</text>
+  <text class="sub" x="40" y="76">How 3 workers average their gradients without a central server</text>
+
+  <g class="row r1">
+    <circle cx="54" cy="118" r="13" fill="#3fb950"/>
+    <text class="stepn" x="54" y="123" text-anchor="middle">1</text>
+    <text class="stept" x="80" y="114">Split</text>
+    <text class="stepd" x="80" y="132">Each worker cuts its gradients into 3 chunks</text>
+  </g>
+  <g class="row r2">
+    <circle cx="54" cy="170" r="13" fill="#79c0ff"/>
+    <text class="stepn" x="54" y="175" text-anchor="middle">2</text>
+    <text class="stept" x="80" y="166">Reduce-scatter</text>
+    <text class="stepd" x="80" y="184">Chunks travel the ring, summed at every hop</text>
+  </g>
+  <g class="row r3">
+    <circle cx="54" cy="222" r="13" fill="#bc8cff"/>
+    <text class="stepn" x="54" y="227" text-anchor="middle">3</text>
+    <text class="stept" x="80" y="218">All-gather</text>
+    <text class="stepd" x="80" y="236">Finished sums circle back so every worker matches</text>
+  </g>
+
+
+  <!-- Right: the ring -->
+  <circle class="spin" cx="670" cy="165" r="122" fill="none" stroke="#232b3d" stroke-width="1" stroke-dasharray="2 10"/>
+  <path id="ring" d="M 670 70 A 95 95 0 1 1 669.99 70 Z" fill="none" stroke="#79c0ff" stroke-width="2" stroke-dasharray="7 7" opacity="0.9"/>
+  <text class="center" x="670" y="161" text-anchor="middle">gradient</text>
+  <text class="center" x="670" y="177" text-anchor="middle">chunks</text>
+
+  <circle r="7" fill="#3fb950"><animateMotion dur="4.5s" repeatCount="indefinite"><mpath href="#ring"/></animateMotion></circle>
+  <circle r="7" fill="#79c0ff"><animateMotion dur="4.5s" begin="-1.5s" repeatCount="indefinite"><mpath href="#ring"/></animateMotion></circle>
+  <circle r="7" fill="#bc8cff"><animateMotion dur="4.5s" begin="-3s" repeatCount="indefinite"><mpath href="#ring"/></animateMotion></circle>
+
+  <!-- Workers at 120 degree spacing on the ring (center 670,165, radius 95) -->
+  <circle class="halo" cx="670" cy="70" r="34" fill="#3fb950"/>
+  <circle cx="670" cy="70" r="26" fill="#161b26" stroke="url(#g)" stroke-width="2.5"/>
+  <text class="node" x="670" y="75" text-anchor="middle">W0</text>
+
+  <circle class="halo h2" cx="752" cy="212" r="34" fill="#79c0ff"/>
+  <circle cx="752" cy="212" r="26" fill="#161b26" stroke="url(#g)" stroke-width="2.5"/>
+  <text class="node" x="752" y="217" text-anchor="middle">W1</text>
+
+  <circle class="halo h3" cx="588" cy="212" r="34" fill="#bc8cff"/>
+  <circle cx="588" cy="212" r="26" fill="#161b26" stroke="url(#g)" stroke-width="2.5"/>
+  <text class="node" x="588" y="217" text-anchor="middle">W2</text>
+</svg>

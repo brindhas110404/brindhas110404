@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="46" viewBox="0 0 900 46" role="img" aria-label="git log --graph">
+<style>
+.m { font-family: 'JetBrains Mono', 'SFMono-Regular', Consolas, 'Liberation Mono', monospace; }
+.led { animation: led 1.6s ease-in-out infinite; }
+@keyframes led { 0%,100% { opacity: 1; } 50% { opacity: .3; } }
+.cur { animation: cur 1s steps(1) infinite; }
+@keyframes cur { 0%,50% { opacity: 1; } 51%,100% { opacity: 0; } }
+
+.in { opacity: 0; animation: in .6s ease-out .1s forwards; }
+@keyframes in { from { opacity: 0; transform: translateX(-8px); } to { opacity: 1; transform: none; } }
+</style>
+<g class="in">
+<text class="m" x="4" y="28" font-size="17" fill="#3fb950" font-weight="700">brindha@sbu</text>
+<text class="m" x="118" y="28" font-size="17" fill="#6e7891">:</text>
+<text class="m" x="130" y="28" font-size="17" fill="#79c0ff" font-weight="700">~</text>
+<text class="m" x="146" y="28" font-size="17" fill="#c9d1d9" xml:space="preserve">$ git log --graph</text>
+<text class="m" x="333" y="28" font-size="13" fill="#6e7891"># commits, eaten by a snake</text>
+</g>
+<line x1="0" y1="42" x2="900" y2="42" stroke="#232b3d" stroke-width="1"/>
+</svg>

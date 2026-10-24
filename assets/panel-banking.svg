@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="270" viewBox="0 0 440 270" role="img" aria-label="banking-paxos-2pc: committed. A cross-shard transfer runs two-phase commit: prepare, all shards vote yes, commit; Paxos keeps replicas in agreement.">
+<style>
+.m { font-family: 'JetBrains Mono', 'SFMono-Regular', Consolas, 'Liberation Mono', monospace; }
+.led { animation: led 1.6s ease-in-out infinite; }
+@keyframes led { 0%,100% { opacity: 1; } 50% { opacity: .3; } }
+.cur { animation: cur 1s steps(1) infinite; }
+@keyframes cur { 0%,50% { opacity: 1; } 51%,100% { opacity: 0; } }
+.bl { opacity: 0; }
+.b0 { animation: bl 9s linear 0.0s infinite; }
+.b1 { animation: bl 9s linear 0.9s infinite; }
+.b2 { animation: bl 9s linear 1.8s infinite; }
+.b3 { animation: bl 9s linear 2.7s infinite; }
+.b4 { animation: bl 9s linear 3.6s infinite; }
+@keyframes bl { 0% { opacity: 0; } 4%, 70% { opacity: 1; } 76%, 100% { opacity: 0; } }
+</style>
+<rect x="1" y="1" width="438" height="268" rx="12" fill="#0b0f19" stroke="#232b3d" stroke-width="1.5"/>
+<path d="M1,13 a12,12 0 0 1 12,-12 h414 a12,12 0 0 1 12,12 v21 h-438 z" fill="#161b26"/>
+<line x1="1" y1="34" x2="439" y2="34" stroke="#232b3d"/>
+<circle cx="20" cy="18" r="5.5" fill="#ff5f57"/><circle cx="38" cy="18" r="5.5" fill="#febc2e"/><circle cx="56" cy="18" r="5.5" fill="#28c840"/>
+<text class="m" x="220.0" y="22" text-anchor="middle" font-size="12" fill="#6e7891">banking-paxos-2pc</text>
+<circle class="led" cx="332" cy="18" r="4.5" fill="#3fb950"/>
+<text class="m" x="342" y="22" font-size="11.5" font-weight="700" fill="#3fb950">COMMITTED</text>
+
+<text class="m" x="22" y="62" font-size="11.5" fill="#6e7891"># sharded, replicated bank in Go (sample run)</text>
+<text class="m bl b0" x="22" y="86" font-size="12.5" fill="#c9d1d9">$ transfer A to C (cross-shard)</text><text class="m bl b1" x="22" y="114" font-size="12.5" fill="#79c0ff">[2pc] PREPARE sent to shard A, shard C</text><text class="m bl b2" x="22" y="142" font-size="12.5" fill="#bc8cff">[2pc] votes: A=YES  C=YES</text><text class="m bl b3" x="22" y="170" font-size="12.5" fill="#3fb950">[2pc] COMMIT, both shards applied</text><text class="m bl b4" x="22" y="198" font-size="12.5" fill="#3fb950">[paxos] replicas agree in each cluster</text>
+<line x1="22" y1="228" x2="418" y2="228" stroke="#232b3d"/>
+<text class="m" x="22" y="250" font-size="12" fill="#6e7891">go · net/rpc · sqlite · rollback on abort</text>
+</svg>

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="270" viewBox="0 0 440 270" role="img" aria-label="gpu-llm-training-profiler: running. fp32, tf32, bf16, FlashAttention and torch.compile being measured on GPT-2.">
+<style>
+.m { font-family: 'JetBrains Mono', 'SFMono-Regular', Consolas, 'Liberation Mono', monospace; }
+.led { animation: led 1.6s ease-in-out infinite; }
+@keyframes led { 0%,100% { opacity: 1; } 50% { opacity: .3; } }
+.cur { animation: cur 1s steps(1) infinite; }
+@keyframes cur { 0%,50% { opacity: 1; } 51%,100% { opacity: 0; } }
+</style>
+<rect x="1" y="1" width="438" height="268" rx="12" fill="#0b0f19" stroke="#232b3d" stroke-width="1.5"/>
+<path d="M1,13 a12,12 0 0 1 12,-12 h414 a12,12 0 0 1 12,12 v21 h-438 z" fill="#161b26"/>
+<line x1="1" y1="34" x2="439" y2="34" stroke="#232b3d"/>
+<circle cx="20" cy="18" r="5.5" fill="#ff5f57"/><circle cx="38" cy="18" r="5.5" fill="#febc2e"/><circle cx="56" cy="18" r="5.5" fill="#28c840"/>
+<text class="m" x="220.0" y="22" text-anchor="middle" font-size="12" fill="#6e7891">gpu-llm-training-profiler</text>
+<circle class="led" cx="352" cy="18" r="4.5" fill="#e3b341"/>
+<text class="m" x="362" y="22" font-size="11.5" font-weight="700" fill="#e3b341">RUNNING</text>
+
+<text class="m" x="22" y="62" font-size="11.5" fill="#6e7891"># GPT-2 124M, one optimization at a time</text>
+<text class="m" x="22" y="89" font-size="12.5" fill="#c9d1d9">fp32 baseline</text><rect x="176" y="78" width="150" height="13" rx="4" fill="#111a2e"/><text class="m" x="336" y="89" font-size="11.5" fill="#6e7891">queued</text><text class="m" x="22" y="115" font-size="12.5" fill="#c9d1d9">tf32</text><rect x="176" y="104" width="150" height="13" rx="4" fill="#111a2e"/><text class="m" x="336" y="115" font-size="11.5" fill="#6e7891">queued</text><text class="m" x="22" y="141" font-size="12.5" fill="#c9d1d9">bf16 autocast</text><rect x="176" y="130" width="150" height="13" rx="4" fill="#111a2e"/><rect x="176" y="130" width="40" height="13" rx="4" fill="#e3b341" opacity=".8"><animate attributeName="x" values="176;286;176" dur="2.4s" repeatCount="indefinite"/></rect><text class="m" x="336" y="141" font-size="11.5" fill="#e3b341">measuring</text><text class="m" x="22" y="167" font-size="12.5" fill="#c9d1d9">+ flashattention</text><rect x="176" y="156" width="150" height="13" rx="4" fill="#111a2e"/><text class="m" x="336" y="167" font-size="11.5" fill="#6e7891">queued</text><text class="m" x="22" y="193" font-size="12.5" fill="#c9d1d9">+ torch.compile</text><rect x="176" y="182" width="150" height="13" rx="4" fill="#111a2e"/><text class="m" x="336" y="193" font-size="11.5" fill="#6e7891">queued</text>
+<line x1="22" y1="218" x2="418" y2="218" stroke="#232b3d"/>
+<text class="m" x="22" y="242" font-size="12" fill="#6e7891">nsight systems · cuda kernel · roofline · agent</text>
+</svg>

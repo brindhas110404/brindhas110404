@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="240" viewBox="0 0 900 240" role="img" aria-label="Career log: Dec 2023 data science intern at Social Friend; Jan 2025 software engineer intern at Social Friend; Jun 2026 graduate research assistant at IRS Labs, Stony Brook; Aug 2026 teaching assistant for CSE 581; May 2027 MS graduation.">
+<style>
+.m { font-family: 'JetBrains Mono', 'SFMono-Regular', Consolas, 'Liberation Mono', monospace; }
+.led { animation: led 1.6s ease-in-out infinite; }
+@keyframes led { 0%,100% { opacity: 1; } 50% { opacity: .3; } }
+.cur { animation: cur 1s steps(1) infinite; }
+@keyframes cur { 0%,50% { opacity: 1; } 51%,100% { opacity: 0; } }
+</style>
+<rect x="1" y="1" width="898" height="238" rx="12" fill="#0b0f19" stroke="#232b3d" stroke-width="1.5"/>
+<path d="M1,13 a12,12 0 0 1 12,-12 h874 a12,12 0 0 1 12,12 v21 h-898 z" fill="#161b26"/>
+<line x1="1" y1="34" x2="899" y2="34" stroke="#232b3d"/>
+<circle cx="20" cy="18" r="5.5" fill="#ff5f57"/><circle cx="38" cy="18" r="5.5" fill="#febc2e"/><circle cx="56" cy="18" r="5.5" fill="#28c840"/>
+<text class="m" x="450.0" y="22" text-anchor="middle" font-size="12" fill="#6e7891">career.log</text>
+<circle class="led" cx="792" cy="18" r="4.5" fill="#79c0ff"/>
+<text class="m" x="802" y="22" font-size="11.5" font-weight="700" fill="#79c0ff">STREAMING</text>
+<g opacity="0"><set attributeName="opacity" to="1" begin="0.40s"/>
+<text class="m" x="24" y="70" font-size="13" fill="#6e7891">[2023-12]</text>
+<text class="m" x="120" y="70" font-size="13.5" font-weight="700" fill="#79c0ff">data science intern @ Social Friend, Chennai</text>
+<text class="m" x="530" y="70" font-size="12.5" fill="#c9d1d9">ETL over 2,000+ records, reports 40% faster</text></g>
+<g opacity="0"><set attributeName="opacity" to="1" begin="0.95s"/>
+<text class="m" x="24" y="102" font-size="13" fill="#6e7891">[2025-01]</text>
+<text class="m" x="120" y="102" font-size="13.5" font-weight="700" fill="#79c0ff">software engineer intern @ Social Friend</text>
+<text class="m" x="530" y="102" font-size="12.5" fill="#c9d1d9">iFriend AI backend for 2,000+ students</text></g>
+<g opacity="0"><set attributeName="opacity" to="1" begin="1.50s"/>
+<text class="m" x="24" y="134" font-size="13" fill="#6e7891">[2026-06]</text>
+<text class="m" x="120" y="134" font-size="13.5" font-weight="700" fill="#bc8cff">graduate research assistant @ IRS Labs, SBU</text>
+<text class="m" x="530" y="134" font-size="12.5" fill="#c9d1d9">MedRec with Stony Brook Hospital</text></g>
+<g opacity="0"><set attributeName="opacity" to="1" begin="2.05s"/>
+<text class="m" x="24" y="166" font-size="13" fill="#6e7891">[2026-08]</text>
+<text class="m" x="120" y="166" font-size="13.5" font-weight="700" fill="#bc8cff">teaching assistant @ CSE 581</text>
+<text class="m" x="530" y="166" font-size="12.5" fill="#c9d1d9">logic, discrete math, theory of computation</text></g>
+<g opacity="0"><set attributeName="opacity" to="1" begin="2.60s"/>
+<text class="m" x="24" y="198" font-size="13" fill="#6e7891">[2027-05]</text>
+<text class="m" x="120" y="198" font-size="13.5" font-weight="700" fill="#3fb950">MS graduation</text>
+<text class="m" x="530" y="198" font-size="12.5" fill="#c9d1d9">next: your team?</text></g>
+
+<rect class="cur" x="24" y="218" width="9" height="16" fill="#3fb950" opacity="0"><set attributeName="opacity" to="1" begin="3.4s"/></rect>
+</svg>

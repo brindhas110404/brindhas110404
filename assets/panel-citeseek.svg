@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="270" viewBox="0 0 440 270" role="img" aria-label="citeseek: live. Rewrite, search 20, rerank 6, answer with citations. 161,141-paper atlas, 19 end-to-end tests passing.">
+<style>
+.m { font-family: 'JetBrains Mono', 'SFMono-Regular', Consolas, 'Liberation Mono', monospace; }
+.led { animation: led 1.6s ease-in-out infinite; }
+@keyframes led { 0%,100% { opacity: 1; } 50% { opacity: .3; } }
+.cur { animation: cur 1s steps(1) infinite; }
+@keyframes cur { 0%,50% { opacity: 1; } 51%,100% { opacity: 0; } }
+.s0 rect { animation: hi 4s linear 0s infinite; }
+.s1 rect { animation: hi 4s linear 1s infinite; }
+.s2 rect { animation: hi 4s linear 2s infinite; }
+.s3 rect { animation: hi 4s linear 3s infinite; }
+@keyframes hi { 0%, 22% { stroke: #bc8cff; fill: #221a3d; } 25%, 100% { stroke: #232b3d; fill: #111a2e; } }
+</style>
+<rect x="1" y="1" width="438" height="268" rx="12" fill="#0b0f19" stroke="#232b3d" stroke-width="1.5"/>
+<path d="M1,13 a12,12 0 0 1 12,-12 h414 a12,12 0 0 1 12,12 v21 h-438 z" fill="#161b26"/>
+<line x1="1" y1="34" x2="439" y2="34" stroke="#232b3d"/>
+<circle cx="20" cy="18" r="5.5" fill="#ff5f57"/><circle cx="38" cy="18" r="5.5" fill="#febc2e"/><circle cx="56" cy="18" r="5.5" fill="#28c840"/>
+<text class="m" x="220.0" y="22" text-anchor="middle" font-size="12" fill="#6e7891">citeseek</text>
+<circle class="led" cx="352" cy="18" r="4.5" fill="#3fb950"/>
+<text class="m" x="362" y="22" font-size="11.5" font-weight="700" fill="#3fb950">LIVE</text>
+
+<text class="m" x="22" y="62" font-size="11.5" fill="#6e7891"># answers about your papers, every claim cited</text>
+<g class="st s0"><rect x="22" y="76" width="69" height="24" rx="6" fill="#111a2e" stroke="#232b3d"/><text class="m" x="57" y="92" font-size="11.5" text-anchor="middle" fill="#c9d1d9">rewrite</text></g><g class="st s1"><rect x="99" y="76" width="84" height="24" rx="6" fill="#111a2e" stroke="#232b3d"/><text class="m" x="141" y="92" font-size="11.5" text-anchor="middle" fill="#c9d1d9">search 20</text></g><g class="st s2"><rect x="192" y="76" width="77" height="24" rx="6" fill="#111a2e" stroke="#232b3d"/><text class="m" x="230" y="92" font-size="11.5" text-anchor="middle" fill="#c9d1d9">rerank 6</text></g><g class="st s3"><rect x="276" y="76" width="115" height="24" rx="6" fill="#111a2e" stroke="#232b3d"/><text class="m" x="334" y="92" font-size="11.5" text-anchor="middle" fill="#c9d1d9">answer + cite</text></g>
+<text class="m" x="22" y="132" font-size="13" fill="#6e7891">models</text><text class="m" x="168" y="132" font-size="13" font-weight="700" fill="#79c0ff">Llama 3.1 8B + 3.3 70B</text>
+<text class="m" x="22" y="156" font-size="13" fill="#6e7891">search</text><text class="m" x="168" y="156" font-size="13" font-weight="700" fill="#79c0ff">2 queries, any library size</text>
+<text class="m" x="22" y="180" font-size="13" fill="#6e7891">topic atlas</text><text class="m" x="168" y="180" font-size="13" font-weight="700" fill="#79c0ff">161,141 papers</text>
+<text class="m" x="22" y="204" font-size="13" fill="#6e7891">e2e tests</text><text class="m" x="168" y="204" font-size="13" font-weight="700" fill="#3fb950">19 passing</text>
+<line x1="22" y1="218" x2="418" y2="218" stroke="#232b3d"/>
+<text class="m" x="22" y="242" font-size="12" fill="#6e7891">$ open https://citeseek.brindhas110404.workers.dev</text>
+</svg>
