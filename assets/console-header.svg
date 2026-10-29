@@ -24,7 +24,7 @@
 <text class="m" x="822" y="22" font-size="11.5" font-weight="700" fill="#3fb950">LIVE</text>
 <text class="m" x="32" y="72" font-size="15" font-weight="600" fill="#3fb950" clip-path="url(#tc0)" xml:space="preserve">$ whoami</text>
 <text class="m" x="32" y="102" font-size="22" font-weight="800" fill="#ffffff" clip-path="url(#tc1)" xml:space="preserve">Brindha Senthilkumar</text>
-<text class="m" x="32" y="132" font-size="15" font-weight="400" fill="#c9d1d9" clip-path="url(#tc2)" xml:space="preserve">MS CS + Applied Math @ Stony Brook University, May 2027</text>
+<text class="m" x="32" y="132" font-size="15" font-weight="400" fill="#c9d1d9" clip-path="url(#tc2)" xml:space="preserve">MS Data Science @ Stony Brook University, May 2027</text>
 <text class="m" x="32" y="162" font-size="15" font-weight="500" fill="#79c0ff" clip-path="url(#tc3)" xml:space="preserve">distributed systems  ·  LLM systems  ·  GPU performance</text>
 <text class="m" x="32" y="192" font-size="15" font-weight="600" fill="#3fb950" clip-path="url(#tc4)" xml:space="preserve">$ systemctl status brindha</text>
 <text class="m" x="32" y="222" font-size="15" font-weight="600" fill="#3fb950" clip-path="url(#tc5)" xml:space="preserve">● active: open to 2027 new grad roles</text>
