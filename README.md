@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/console-header.svg" width="100%" alt="Terminal: whoami. Brindha Senthilkumar, MS CS and Applied Math at Stony Brook, May 2027. Distributed systems, LLM systems, GPU performance. Open to 2027 new grad roles." />
+  <img src="assets/console-header.svg" width="100%" alt="Terminal: whoami. Brindha Senthilkumar, MS, Data Science at Stony Brook, May 2027. Distributed systems, LLM systems, GPU performance. Open to 2027 new grad roles." />
 </p>
 
 <p align="center">
