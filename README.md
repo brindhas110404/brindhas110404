@@ -7,7 +7,7 @@
   <a href="https://brindha-senthilkumar.vercel.app"><img src="https://img.shields.io/badge/portfolio-0b0f19?style=for-the-badge&logo=vercel&logoColor=c9d1d9" alt="Portfolio" /></a>
   <a href="Brindha_Senthilkumar_Resume.pdf"><img src="https://img.shields.io/badge/resume.pdf-0b0f19?style=for-the-badge&logo=readthedocs&logoColor=3fb950" alt="Resume" /></a>
   <a href="mailto:brindhas110404@gmail.com"><img src="https://img.shields.io/badge/email-0b0f19?style=for-the-badge&logo=gmail&logoColor=bc8cff" alt="Email" /></a>
-  <a href="https://citeseek.brindhas110404.workers.dev/"><img src="https://img.shields.io/badge/try_citeseek_live-0b0f19?style=for-the-badge&logo=cloudflare&logoColor=e3b341" alt="Try CiteSeek live" /></a>
+  <a href="https://citeseek.brindhas110404.workers.dev/"><img src="https://img.shields.io/badge/citeseek_live-0b0f19?style=for-the-badge&logo=cloudflare&logoColor=e3b341" alt="Try CiteSeek live" /></a>
 </p>
 
 <img src="assets/p-now.svg" width="100%" alt="What I'm working on right now" />
