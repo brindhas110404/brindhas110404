@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-  <a href="https://www.linkedin.com/in/brindha-s-465728360/"><img src="https://img.shields.io/badge/linkedin-0b0f19?style=for-the-badge&logo=linkedin&logoColor=79c0ff" alt="LinkedIn" /></a>
+  <a href="https://www.linkedin.com/in/brindha-senthilkumar-465728360/"><img src="https://img.shields.io/badge/linkedin-0b0f19?style=for-the-badge&logo=linkedin&logoColor=79c0ff" alt="LinkedIn" /></a>
   <a href="https://brindha-senthilkumar.vercel.app"><img src="https://img.shields.io/badge/portfolio-0b0f19?style=for-the-badge&logo=vercel&logoColor=c9d1d9" alt="Portfolio" /></a>
   <a href="Brindha_Senthilkumar_Resume.pdf"><img src="https://img.shields.io/badge/resume.pdf-0b0f19?style=for-the-badge&logo=readthedocs&logoColor=3fb950" alt="Resume" /></a>
   <a href="mailto:brindhas110404@gmail.com"><img src="https://img.shields.io/badge/email-0b0f19?style=for-the-badge&logo=gmail&logoColor=bc8cff" alt="Email" /></a>
